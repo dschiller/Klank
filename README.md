@@ -4,7 +4,7 @@
 
 1. Create an amazing App for free (Windows, Mac, Linux)
    - Think as a Musician instead as a Technican
-2. Show that it is possible to just use pure JavaScript to create amazing Apps without get crazy with thousands of Frameworks
+2. Show that it is possible to just use pure Java Script ( aka Vanilla JS ) to create amazing Apps without get crazy with thousands of Frameworks
 3. Extract the Components and Techniques to share with other Electron Apps
 
 Comes from 'electron-quick-start' ( https://electronjs.org/docs/tutorial/quick-start )
