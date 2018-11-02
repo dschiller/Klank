@@ -43,6 +43,7 @@ class Title {
 
     constructor(dialog, title) {
         this.dialog = dialog
+        // TODO: Need to be fixed; Somehow doesn't work on multiple || Formattings; Check the Outcome to see the Issues
         this.title = title.replace(/[||].+[||]/g, '<titleBold>$&</titleBold>').replace(/[||]/g, '')
         if (this.title.includes('[TrackId]')) {
             this.title = this.title.replace('[TrackId]', this.dialog.object.track.getId())
