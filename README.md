@@ -16,4 +16,4 @@ Comes from 'electron-quick-start' ( https://electronjs.org/docs/tutorial/quick-s
 
 ## License
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+[MIT](LICENSE.md)
