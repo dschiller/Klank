@@ -21,7 +21,7 @@ spectron
 
 ```
 git clone https://github.com/dschiller/Klank
-cd Klang
+cd Klank
 npm install
 npm start
 ```
