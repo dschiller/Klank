@@ -1,0 +1,38 @@
+tracks {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    background-color: #111;
+}
+
+track {
+    background-color: #555;
+    width: 15vw;
+    margin: 0vw 1px 0vw 0vw;
+    flex: 1 1 0%;
+    transition: background-color 500ms, flex 100ms;
+}
+
+track:hover {
+    background-color: #7a7a7a;
+}
+
+id {
+    color: #444;
+    background-color: #666;
+    border-radius: 0vw 0vw 4vw 0vw;
+    padding: 0vw 1.6vw 0vw .5vw;
+    margin: 0vw 1vw 0vw 0vw;
+}
+
+name {
+    color: #81aaf8;
+    padding: .0vw .7vw;
+    border-left: .1vw solid transparent;
+    border-right: .1vw solid transparent;
+    transition: color 500ms;
+}
+
+name:hover {
+    color: #fff;
+}

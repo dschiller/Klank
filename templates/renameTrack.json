@@ -1,0 +1,17 @@
+{
+    "title": "Rename Track [TrackId] - ||[TrackName]||",
+    "body": {
+        "message": "To rename the Track enter a new Trackname and click the |OK| Button. To Cancel click the |Cancel| Button.",
+        "textboxTrackname": "Trackname"
+    },
+    "buttons": {
+        "buttonOk": {
+            "text": "OK",
+            "accessKey": "Enter"
+        },
+        "buttonCancel": {
+            "text": "Cancel",
+            "accessKey": "ESC"
+        }
+    }
+}

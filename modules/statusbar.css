@@ -1,0 +1,23 @@
+statusbar {
+    background-color: #3e61fd;
+    width: 100%;
+    display: block;
+    margin-left: 0vw;
+    float: left !important;
+    position: fixed;
+    bottom: 0px;
+    padding-left: .2vw;
+    font-size: 1.4vw;
+    line-height: 3.4vw;
+    color: #fff;
+}
+
+item {
+    margin: 0vw .3vw !important;
+    font-size: 1.4vw !important;
+    color: #3e61fd !important;
+}
+
+item:hover {
+    color: #fff !important;
+}

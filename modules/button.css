@@ -1,0 +1,24 @@
+button, .button {
+    background-color: #fff;
+    color: #111;
+    padding: .2vw .9vw;
+    border-radius: .2vw;
+    transition: background-color 500ms, color 500ms, border 500ms;
+    margin: 0vw .2vw;
+    border: .2vw solid #fff;
+    font-size: 1.1vw;
+    outline: 0vw;
+    flex: 1;
+}
+
+button.outline:hover, .button.outline:hover {
+    background-color: transparent;
+    border: .2vw solid #fff;
+    color: #fff;
+}
+
+button:hover, .button:hover {
+    background-color: #333;
+    border: .2vw solid #333;
+    color: #fff;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Klank</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="modules/statusbar.css">
+    <link rel="stylesheet" type="text/css" href="modules/tracks.css">
+    <link rel="stylesheet" type="text/css" href="modules/dialog.css">
+    <link rel="stylesheet" type="text/css" href="modules/button.css">
+    <link rel="stylesheet" type="text/css" href="modules/textbox.css">
+  </head>
+  <body>
+    <h1>Klank</h1>
+
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+
+    <tracks></tracks>
+    <statusbar></statusbar>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script src="modules/animation.js"></script>
+    <script src="modules/button.js"></script>
+    <script src="modules/textbox.js"></script>
+    <script src="modules/dialog.js"></script>
+    <script src="modules/tracks.js"></script>
+    <script src="modules/statusbar.js"></script>
+  </body>
+</html>
