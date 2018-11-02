@@ -1,4 +1,11 @@
-# electron-quick-start
+# Klank
+
+Goals:
+1. Create an amzing App for free for Windows, Mac and Linux
+   - Think as a Musician instead as a Technican
+2. Show that it is possible to just use pure Javascript ( aka Vanilla Script ) to create amizing Apps without get crazy with thousands of Frameworks
+
+Comes from 'electron-quick-start' ( https://electronjs.org/docs/tutorial/quick-start )
 
 **Clone and run for a quick way to see Electron in action.**
 
