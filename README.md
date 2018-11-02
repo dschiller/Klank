@@ -7,7 +7,7 @@
 2. Show that it is possible to just use pure JavaScript ( aka Vanilla JS ;) ) to create amazing Apps without get crazy with thousands of Frameworks
 3. Extract the Components and Techniques to share with other Electron Apps
 
-Comes from 'electron-quick-start' ( https://electronjs.org/docs/tutorial/quick-start )
+Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-start )
 
 ## Used Modules
 
