@@ -9,10 +9,12 @@ Comes from 'electron-quick-start' ( https://electronjs.org/docs/tutorial/quick-s
 
 # Installation and Running
 
-- git clone https://github.com/dschiller/Klank
-- cd Klang
-- npm install
-- npm start
+```
+git clone https://github.com/dschiller/Klank
+cd Klang
+npm install
+npm start
+```
 
 ## License
 
