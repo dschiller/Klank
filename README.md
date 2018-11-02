@@ -22,6 +22,8 @@ Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-s
 - [ ] Multiplier inbetween Tempi Connections to create synced or unsynced polyrythms
 - [ ] Tempi is limitless means goes from 0 BPM up to lets say 10.000 BPM
 - [ ] Whole App Modifiers like LFO etc for all purposes; eg. Change Main Tempo or adding Tracks randomly with FX and a Sample Folder Pool with random Notes etc.; What comes in your Mind you should be able to do
+- [ ] Add Line Player; Kind of small String which is flying in the Wind; Add Forces to it like Wind or Magnetic if the String has kind of Metal in it's Material Properties; Notes are attached to these Strings and by the Forces the Timing changes per String because they move in the Room and the Notes get per Force and Properties different Play Positions; They are from top to down, follow the Gravity
+
 ## Used Modules
 
 ```
