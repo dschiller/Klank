@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "electron-mocha": "^6.0.4",
-    "electron-reload": "^1.2.5"
+    "electron-reload": "^1.2.5",
+    "spectron": "^5.0.0"
   }
 }
