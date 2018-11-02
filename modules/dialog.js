@@ -8,7 +8,7 @@ class Dialog {
         this.body = new Body()
         // TODO: Put this.jsonData.body Data into a Body()
         for (let element in this.jsonData.body) {
-            if (element = 'message') {
+            if (element == 'message') {
                 this.message = this.jsonData.body[element]
             }
             // TODO: Add textbox Items
