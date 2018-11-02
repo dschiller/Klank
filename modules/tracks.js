@@ -5,12 +5,18 @@ class Tracks {
     }
 
     addTrack(name) {
-        const track = new Track(this.getTrackCount() + 1, name, this)
+        let trackId = this.getTrackCount() + 1
+        let track = new Track(trackId, name)
         this.element.appendChild(track.element)
+        this['track_' + trackId] = track
     }
 
     getTrackCount() {
         return this.element.getElementsByTagName('track').length
+    }
+
+    getTrack(id) {
+        return this['track_' + id]
     }
 
 }
@@ -21,9 +27,9 @@ class Track {
         this.id = id;
         this.name = name;
         this.element = document.createElement('track')
-        this.element.appendChild(new Id(this, this.id).element)
+        this.element.appendChild(new Id(this.id).element)
         this.element.id = this.getId()
-        this.element.appendChild(new Name(this, this.name).element)
+        this.element.appendChild(new Name(this.id, this.name).element)
     }
 
     getId() {
@@ -38,14 +44,13 @@ class Track {
 
 class Id {
 
-    constructor(track, id) {
-        this.track = track
+    constructor(id) {
         this.id = id
         this.element = document.createElement('id')
         this.element.innerText = this.id
         this.element.onclick = () => {
-            let trackStyles = getComputedStyle(this.track.element)
-            this.track.element.style.setProperty('flex', trackStyles.flex == '1 1 0%' ? '0 1 0%' : '1 1 0%')
+            let trackStyles = getComputedStyle(tracks.getTrack(this.id).element)
+            tracks.getTrack(this.id).element.style.setProperty('flex', trackStyles.flex == '1 1 0%' ? '0 1 0%' : '1 1 0%')
         }
     }
 
@@ -53,13 +58,13 @@ class Id {
 
 class Name {
 
-    constructor(track, name) {
-        this.track = track
+    constructor(id, name) {
+        this.id = id
         this.name = name
         this.element = document.createElement('name')
         this.element.innerText = this.name
         this.element.ondblclick = () => {
-            new Dialog(this, './templates/renameTrack.json')
+            new Dialog(tracks.getTrack(this.id), './templates/renameTrack.json')
         }
     }
 
@@ -70,11 +75,6 @@ class Name {
 
 }
 
-let tracks = null
-let tracksElements = document.getElementsByTagName('tracks');
-for (let index = 0; index < tracksElements.length; index++) {
-    const tracksElement = tracksElements[index]
-    tracks = new Tracks(tracksElement)
-    tracks.addTrack('Sax')
-    tracks.addTrack('Bass')
-}
+let tracks = core.init('tracks', Tracks)
+tracks.addTrack('Sax')
+tracks.addTrack('Bass')

@@ -46,10 +46,10 @@ class Title {
         // TODO: Need to be fixed; Somehow doesn't work on multiple || Formattings; Check the Outcome to see the Issues
         this.title = title.replace(/[||].+[||]/g, '<titleBold>$&</titleBold>').replace(/[||]/g, '')
         if (this.title.includes('[TrackId]')) {
-            this.title = this.title.replace('[TrackId]', this.dialog.object.track.getId())
+            this.title = this.title.replace('[TrackId]', this.dialog.object.getId())
         }
         if (this.title.includes('[TrackName]')) {
-            this.title = this.title.replace('[TrackName]', this.dialog.object.track.getName())
+            this.title = this.title.replace('[TrackName]', this.dialog.object.getName())
         }
         this.element = document.createElement('title_') // 'title_' workarround: 'title' is partly used by DOM; so innerHTML is not setable
         this.element.innerHTML = this.title

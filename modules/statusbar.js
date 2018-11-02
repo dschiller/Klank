@@ -22,10 +22,6 @@ class Item extends Button {
     }
 }
 
-let statusbarElements = document.getElementsByTagName('statusbar')
-for (let index = 0; index < statusbarElements.length; index++) {
-    const statusbarElement = statusbarElements[index]
-    const statusbar = new Statusbar(statusbarElement)
-    statusbar.addItem('Add new Mono Track')
-    statusbar.addItem('Add new Stereo Track')
-}
+let statusbar = core.init('statusbar', Statusbar)
+statusbar.addItem('Add new Mono Track')
+statusbar.addItem('Add new Stereo Track')
