@@ -26,6 +26,12 @@ npm install
 npm start
 ```
 
+## Testing
+
+```
+npm test
+```
+
 ## License
 
 [MIT](LICENSE.md)
