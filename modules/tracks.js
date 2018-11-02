@@ -30,6 +30,8 @@ class Track {
         this.element.appendChild(new Id(this.id).element)
         this.element.id = this.getId()
         this.element.appendChild(new Name(this.id, this.name).element)
+        this.element.appendChild(new Pan(.5).element)
+        this.element.appendChild(new Volume(.5).element)
     }
 
     getId() {
@@ -75,6 +77,26 @@ class Name {
 
 }
 
+class Pan extends Knob {
+
+    constructor(pan) {
+        super(pan, 0, 1, 'Pan', 'pan')
+        this.pan = pan
+    }
+
+}
+
+class Volume extends Knob {
+
+    constructor(volume) {
+        super(volume, 0, 1, 'Volume', 'volume', KnobStyle.Yellow)
+        this.volume = volume
+    }
+
+}
+
 let tracks = core.init('tracks', Tracks)
 tracks.addTrack('Sax')
 tracks.addTrack('Bass')
+tracks.addTrack('Keyboard')
+tracks.addTrack('FX')

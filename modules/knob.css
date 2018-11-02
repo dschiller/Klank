@@ -1,0 +1,52 @@
+knob, .knob {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+knobPlate {
+    flex: 1 1 0%;
+    margin: auto;
+    top: 50%;
+    border-radius: 50%;
+    width: 6.5vw;
+    height: 6.5vw;
+    background: linear-gradient(#474747, #616161);
+}
+
+knobRotary {
+    position: absolute;
+    width: 6vw;
+    height: 6vw;
+    margin: .25vw;
+    transition: transform 200ms ease-out;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #d4cfc3 10%, #a49981 40.8%, #cfc9bc 41%, #cfc9bc 58%, #ffffff 58.2%, #d4cfc3 90%);
+    box-shadow: 0 0.1em 0.2em 0 rgba(255, 255, 255, 0.9) inset, 0 -0.1em 0.3em 0 rgba(255, 255, 255, 0.3) inset, 0 0.08em 0.3em 0 rgba(0, 0, 17, 0.3), 0.5em 0 1em 0 rgba(255, 255, 255, 0.5) inset, -0.5em 0 1em 0 rgba(164, 153, 129, 0.3) inset, 0 4em 1em -3.5em rgba(0, 0, 34, 0.3);
+}
+
+knobRotary.yellow {
+    background: linear-gradient(90deg, #dbd413 10%, #716e0a 40.8%, #cfc912 41%, #cfc912 58%, #f2ed65 58.2%, #dbd413 90%);
+    box-shadow: 0 0.1em 0.2em 0 rgba(242, 237, 101, 0.9) inset, 0 -0.1em 0.3em 0 rgba(242, 237, 101, 0.3) inset, 0 0.08em 0.3em 0 rgba(0, 0, 17, 0.3), 0.5em 0 1em 0 rgba(242, 237, 101, 0.5) inset, -0.5em 0 1em 0 rgba(113, 110, 10, 0.3) inset, 0 4em 1em -3.5em rgba(0, 0, 34, 0.3);
+}
+
+knobRotary::before {
+    position: absolute;
+    content: "";
+    left: 2.83vw;
+    width: 0.3vw;
+    height: 1.7vw;
+    border-radius: 0 0 0.2vw 0.2vw;
+    background: #b44;
+    box-shadow: -0.05vw 0 0.1vw 0 rgba(0, 0, 0, 0.4) inset;
+}
+
+knobRotary:hover {
+    transform: rotate(180deg);
+}
+
+label {
+    flex: 1 1 0%;
+    text-align: center;
+    font-size: 2vw;
+}
