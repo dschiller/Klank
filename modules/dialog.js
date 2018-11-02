@@ -39,11 +39,6 @@ class Dialog {
 
 }
 
-let Buttons = {
-    Ok: 1,
-    OkCancel: 2
-}
-
 class Title {
 
     constructor(dialog, title) {
