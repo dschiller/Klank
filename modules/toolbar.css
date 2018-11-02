@@ -8,12 +8,12 @@ playbutton {
     background: transparent;
     box-sizing: border-box;
     width: 0;
-    height: 74px;
+    height: 4vw;
     border-color: transparent transparent transparent #202020;
     transition: 100ms all ease;
     cursor: pointer;
     border-style: solid;
-    border-width: 37px 0 37px 60px;
+    border-width: 2vw 0 2vw 3vw;
 }
 
 playbutton:hover {
@@ -22,5 +22,5 @@ playbutton:hover {
 
 playbutton.paused {
     border-style: double;
-    border-width: 0px 0 0px 60px;
+    border-width: 0 0 0 3vw;
 }

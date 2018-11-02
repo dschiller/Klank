@@ -9,6 +9,19 @@
 
 Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-start )
 
+## Visions, Ideas, Enhancements, Bugs
+
+- [ ] Add Outliner
+- [ ] Dials
+- [ ] Widgets
+- [ ] Animations
+- [ ] Video Engine
+- [ ] Independend Tempi per Track
+- [ ] Whole UI can be matched whats needed; no systematic UI Flow; User takes what he needs like in real World
+- [ ] Per Track Connection to Main Tempi or differend Tracks Tempi
+- [ ] Multipllier inbeetween Tempi Connections to create synced or unsynced polyrythms
+- [ ] Tempi is limitless means goes from 0 BPM up to lets say 10.000 BPM
+- [ ] Whole App Modifiers like LFO etc for all purposes; eg. Change Main Tempo or adding Tracks randomly with FX and a Sample Folder Pool with random Notes etc.; What comes in your Mind you should be able to do
 ## Used Modules
 
 ```
