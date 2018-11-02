@@ -13,7 +13,8 @@ Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-s
 
 ```
 electron-reload
-mocha
+electron-mocha
+spectron
 ```
 
 ## Installation and Running

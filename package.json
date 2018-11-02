@@ -1,27 +1,24 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "klank",
+  "version": "1.0.5",
+  "description": "Electron Audio App",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "mocha"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/dschiller/Klank",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Audio"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Dirk Schiller",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^3.0.6"
+    "electron": "^3.0.7"
   },
   "dependencies": {
-    "electron-reload": "^1.2.5",
-    "mocha": "^5.2.0"
+    "electron-mocha": "^6.0.4",
+    "electron-reload": "^1.2.5"
   }
 }
