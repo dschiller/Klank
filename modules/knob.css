@@ -42,11 +42,12 @@ knobRotary::before {
 }
 
 knobRotary:hover {
-    transform: rotate(180deg);
+    transform: rotate(180deg) scale(1.04);
 }
 
 label {
     flex: 1 1 0%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
+    color: #aaa;
 }
