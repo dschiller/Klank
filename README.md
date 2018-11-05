@@ -63,7 +63,7 @@ It is possible to use Code to control the whole App via JavaScript.
 
 A Doubleclick on a Rotary / Knob animates to the Default Value.
 
-## Dialog
+### Dialog
 
 The Dialogs are modal and a Click somewhere else animates them shaking to raise Attention to it.
 
