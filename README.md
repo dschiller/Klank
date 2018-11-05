@@ -57,7 +57,7 @@ npm test
 
 It is possible to use Code to control the whole App via JavaScript.
 
-```tracks.track_2.volume.setValue(.1)``` Set the Volume of Track to to 0.2
+```tracks.track_2.volume.setValue(.2)``` Set the Volume of Track to to 0.2
 
 ## License
 
