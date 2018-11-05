@@ -31,7 +31,12 @@ class Track {
         this.element.id = this.getId()
         this.element.appendChild(new Name(this.id, this.name).element)
         this.element.appendChild(new Pan(.5).element)
-        this.element.appendChild(new Volume(.5).element)
+        this.groupLpVolumeHp = document.createElement('grouplpvolumehp')
+        //this.groupLpVolumeHp.style.backgroundColor = '#11ffffff'
+        this.groupLpVolumeHp.appendChild((this.lowpass = new LP(0)).element)
+        this.groupLpVolumeHp.appendChild((this.volume = new Volume(.5)).element)
+        this.groupLpVolumeHp.appendChild((this.highpass = new HP(1)).element)
+        this.element.appendChild(this.groupLpVolumeHp)
     }
 
     getId() {
@@ -88,9 +93,24 @@ class Pan extends Knob {
 
 class Volume extends Knob {
 
-    constructor(volume) {
-        super(volume, 0, 1, 'Volume', 'volume', KnobStyle.Yellow)
-        this.volume = volume
+    constructor(defaultValue) {
+        super(defaultValue, 0, 1, 'Volume', 'volume', KnobStyle.Yellow)
+    }
+
+}
+
+class LP extends Knob {
+
+    constructor(defaultValue) {
+        super(defaultValue, 0, 1, 'LP', 'lowpass', KnobStyle.Grey, .5)
+    }
+
+}
+
+class HP extends Knob {
+
+    constructor(defaultValue) {
+        super(defaultValue, 0, 1, 'HP', 'highpass', KnobStyle.Grey, .5)
     }
 
 }
