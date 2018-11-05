@@ -66,7 +66,7 @@ A Doubleclick on a Rotary / Knob animates to the Default Value.
 ### Dialog
 
 The Dialogs are modal and a Click somewhere else animates them shaking to raise Attention to it.
-The Dialogs laid down in JSON Files to simplify Dialog Creation. Eg. ''Templates/renameTrack.json''
+The Dialogs laid down in JSON Files to simplify Dialog Creation. Eg. ```Templates/renameTrack.json```.
 
 ### Tracknumber
 
