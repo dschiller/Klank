@@ -67,6 +67,16 @@ A Doubleclick on a Rotary / Knob animates to the Default Value.
 
 The Dialogs are modal and a Click somewhere else animates them shaking to raise Attention to it.
 
+### Tracknumber
+
+A click on a Tracknumber animates the Collapse or Expand of the Track.
+
+### Trackname
+
+A Doubleclick on a Trackname opens the Rename Dialog.
+
+- [ ] Add Textfield
+ 
 ## License
 
 [MIT](LICENSE.md)
