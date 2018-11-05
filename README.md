@@ -59,6 +59,14 @@ It is possible to use Code to control the whole App via JavaScript.
 
 ```tracks.track_2.volume.setValue(.2)``` Set the Volume of Track to to 0.2
 
+### Default Value
+
+A Doubleclick on a Rotary / Knob animates to the Default Value.
+
+## Dialog
+
+The Dialogs are modal and a Click somewhere else animates them shaking to raise Attention to it.
+
 ## License
 
 [MIT](LICENSE.md)
