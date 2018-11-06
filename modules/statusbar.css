@@ -21,3 +21,14 @@ item {
 item:hover {
     color: #fff !important;
 }
+
+.coder {
+    background-color: #111;
+    color: #aaa;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    float: right;
+    margin-top: .4vw;
+    margin-right: .6vw;
+    width: 50vw;
+}

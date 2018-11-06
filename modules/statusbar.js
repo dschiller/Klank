@@ -2,6 +2,7 @@ class Statusbar {
 
     constructor(element) {
         this.element = element
+        this.element.appendChild(new Coder().element)
     }
 
     addItem(text) {
@@ -20,6 +21,21 @@ class Item extends Button {
             tracks.addTrack('New Track')
         }
     }
+}
+
+class Coder extends Textbox {
+
+    constructor() {
+        super(null, null, 'coder')
+
+        this.element.onkeydown = (e) => {
+            if (e.keyCode == 13) {
+                console.log(this.element.value)
+                eval(this.element.value)
+            }
+        }
+    }   
+
 }
 
 let statusbar = core.init('statusbar', Statusbar)

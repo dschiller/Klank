@@ -96,11 +96,13 @@ class Knob {
     }
 
     degToValue(value) {
-        return ((((((this.maxValue-this.minValue)/this.maxDeg*value))+((this.maxValue-this.minValue)))/2)+this.minValue).toFixed(2)
+        this.value = value
+        return ((((((this.maxValue-this.minValue)/this.maxDeg*this.value))+((this.maxValue-this.minValue)))/2)+this.minValue).toFixed(2)
     }
 
     valueToDeg(value) {
-        return ((((((this.maxDeg-this.minDeg)/(this.maxValue-this.minValue)*value))))+this.minDeg).toFixed(2)
+        this.value = value
+        return ((((((this.maxDeg-this.minDeg)/(this.maxValue-this.minValue)*this.value))))+this.minDeg).toFixed(2)
     }
 
     setSize(size) {

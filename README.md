@@ -28,6 +28,8 @@ Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-s
 
 ![Dialog](https://raw.githubusercontent.com/dschiller/klank/master/docs/dialoga.png)
 
+![Dialog](https://raw.githubusercontent.com/dschiller/klank/master/docs/coder.png)
+
 ## Used Modules
 
 ```
@@ -53,7 +55,7 @@ npm test
 
 ## Features
 
-### Incode
+### Coder
 
 It is possible to use Code to control the whole App via JavaScript.
 
