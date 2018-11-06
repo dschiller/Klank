@@ -30,7 +30,7 @@ class Track {
         this.element.appendChild(new Id(this.id).element)
         this.element.id = this.getId()
         this.element.appendChild(new Name(this.id, this.name).element)
-        this.element.appendChild(new Pan(.5).element)
+        this.element.appendChild((this.pan = new Pan(.5)).element)
         this.groupLpVolumeHp = document.createElement('grouplpvolumehp')
         //this.groupLpVolumeHp.style.backgroundColor = '#11ffffff'
         this.groupLpVolumeHp.appendChild((this.lowpass = new LP(0)).element)
