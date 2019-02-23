@@ -26,9 +26,9 @@ Comes from 'electron-quick-start' ( https://github.com/electron/electron-quick-s
 
 ## Screenshots
 
-![Dialog](https://raw.githubusercontent.com/dschiller/klank/master/docs/dialoga.png)
+![Dialog](https://github.com/dschiller/Klank/raw/master/docs/dialoga.png)
 
-![Dialog](https://raw.githubusercontent.com/dschiller/klank/master/docs/coder.png)
+![Dialog](https://github.com/dschiller/klank/raw/master/docs/coder.png)
 
 ## Used Modules
 
